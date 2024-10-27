@@ -1,4 +1,14 @@
 
+
+const loading = document.getElementById("loading");
+
+const loadingDuration = 10000; 
+
+setTimeout(() => {
+    loading.classList.add("loading-none");
+}, loadingDuration);
+
+
 window.addEventListener("scroll", function () {
     shrink();
 });
@@ -13,25 +23,54 @@ function shrink() {
     }
 }
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('humburger');
+    const navLinks = document.getElementById('navbar-bootom');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('activeh');
+    });
+});
+
+
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 46,
     nav: true,
     responsive: {
-        0: {
-            items: 2
-        }
-        //     250: {
-        //         items: 3
-        //     },
-        //     500: {
-        //         items: 5
-        //     },
-        //     750: {
-        //         items: 7
-        //     },
-        //     1000: {
-        //         items: 9
+        // 0: {
+        //     items: 1
+        // },
+        // 1035: {
+        //     items: 2
         // }
+        0: {
+            items: 1,
+            nav: false
+        },
+        1035: {
+            items: 2,
+            nav: true,
+            loop: false
+        }
     }
 })
+
+window.addEventListener("scroll", function () {
+    toggleBacktop();
+});
+
+let backtop = document.getElementById("backtop");
+
+function toggleBacktop() {
+    if (
+        document.body.scrollTop > 150 ||
+        document.documentElement.scrollTop > 150
+    ) {
+        backtop.classList.add('backtop-show')
+    } else {
+        backtop.classList.remove('backtop-show')
+    }
+}
