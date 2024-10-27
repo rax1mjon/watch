@@ -18,47 +18,64 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <a class="nav-brand" href="./index.html">
                     <img src="./images/logo-wTCH.svg" alt="tis site's logotive" class="brand-logo">
                     <p class="brand-name">Raximjon</p>
                 </a>
-                <ol class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-item__link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#brands" class="nav-item__link">Brands</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Product" class="nav-item__link">Recent Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-item__link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-item__link">About</a>
-                    </li>
-                </ol>
-                <ul class="nav-icons">
-                    <li class="nav-icon__item">
-                        <a href="#input-search" class="nav-item__link">
-                            <img src="./images/Search.svg" alt="no img ?">
-                        </a>
-                    </li>
-                    <li class="nav-icon__item">
-                        <a href="#" class="nav-item__link">
-                            <img src="./images/Person.svg" alt="no img ?">
-                        </a>
-                    </li>
-                    <li class="nav-icon__item">
-                        <a href="#" class="nav-item__link">
-                            <img src="./images/ShoppingCart.svg" alt="no img ?">
-                        </a>
-                    </li>
-                </ul>
+                <div class="navbar-bootom">
+                    <ol class="nav-list">
+                        <li class="nav-item">
+                            <a href="#hero" class="nav-item__link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#brands" class="nav-item__link">Brands</a>
+                            <ol class="brand-drop">
+                                <li class="brand-drop__item">
+                                    <a href="#brands" class="brand-drop__link">Apple</a>
+                                </li>
+                                <li class="brand-drop__item">
+                                    <a href="#brands" class="brand-drop__link">Samsung</a>
+                                </li>
+                                <li class="brand-drop__item">
+                                    <a href="#brands" class="brand-drop__link">Xiaomi</a>
+                                </li>
+                                <li class="brand-drop__item">
+                                    <a href="#brands" class="brand-drop__link">FitBit</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Product" class="nav-item__link">Recent Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item__link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-item__link">About</a>
+                        </li>
+                    </ol>
+                    <ul class="nav-icons">
+                        <li class="nav-icon__item">
+                            <form class="navbar-search">
+                                <input class="navbar-input" type="search" name="user_searching" placeholder="Search ..." >
+                                <button class="navbar-button" type="submit"><img width="20" height="24" src="./images/Search.svg" alt="no img ?"></button>
+                            </form>
+                        </li>
+                        <li class="nav-icon__item">
+                            <a href="#" class="nav-item__link">
+                                <img src="./images/Person.svg" alt="no img ?">
+                            </a>
+                        </li>
+                        <li class="nav-icon__item">
+                            <a href="#" class="nav-item__link">
+                                <img src="./images/ShoppingCart.svg" alt="no img ?">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
