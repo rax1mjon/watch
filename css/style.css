@@ -784,7 +784,7 @@ footer {
     justify-content: center;
     z-index: 111;
     background-color: #263038;
-    padding-top: 420px;
+    padding-top: calc(100vh / 2);
     }
 
 .loader {
